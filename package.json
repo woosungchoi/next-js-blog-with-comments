@@ -29,5 +29,8 @@
     "lerna": "^3.22.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.5.2"
+  },
+  "engines": {
+    "node": "^22.23.4 || ^24.22.1 || ^26.12.1"
   }
 }

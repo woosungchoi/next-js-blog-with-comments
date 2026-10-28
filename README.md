@@ -21,3 +21,10 @@ npm run start:sanity
 ```
 
 The blog will be running at `http://localhost:3000`, the Studio will run at `http://localhost:3333`.
+
+### Node.js security baseline
+
+Use `nvm install` and `nvm use` to select the patched runtime in `.nvmrc`.
+CVE-2026-111497 affects the native Brotli decoder; updating npm dependencies
+alone does not patch Node.js. The security version requirement is ^22.23.4 || ^24.22.1 || ^26.12.1 (stable releases only).
+See [the Node.js security release](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
